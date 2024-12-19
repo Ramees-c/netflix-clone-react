@@ -11,7 +11,7 @@ function Banner() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(`${BASE_URL}/trending/all/week?api_key=${API_KEY}&language=en-US`)
-      setMovie(response.data.results[1])
+      setMovie(response.data.results[2])
       // console.log(response.data.results[0])
     }
     fetchData();
